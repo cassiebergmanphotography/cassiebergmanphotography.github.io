@@ -1,0 +1,11 @@
+div class="container">
+	<h1 class="gallery-title">Graduation Images</h1>
+	<a class="btn back-btn btn-lg btn-primary glyphicon glyphicon-arrow-left" href="/"></a>
+	<div class="showImages">
+		<ul class="gallery">
+			<% graduationImages.forEach(function(image, idx){ %>
+			<li><a href="graduation-images/<%= idx %>"><img class="gallery-img" src="<%= image.src %>"/></a></li>	
+			<% }); %>
+		</ul>
+	</div>
+</div>

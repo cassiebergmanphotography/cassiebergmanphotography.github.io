@@ -1,0 +1,11 @@
+<div class="container">
+	<h1 class="gallery-title">Maternity Images</h1>
+	<a class="btn back-btn btn-lg btn-primary" href="/">BACK</a>
+	<div class="showImages">
+		<ul class="gallery">
+			<% maternityImages.forEach(function(image, idx){ %>
+			<li><a href="maternity-images/<%= idx %>"><img class="gallery-img" src="<%= image.src %>"/></a></li>	
+			<% }); %>
+		</ul>
+	</div>
+</div>
